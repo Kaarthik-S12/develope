@@ -31,7 +31,7 @@ const Home = ({ addToCart }) => {
           <div key={item.id} className="food-card">
             <img src={item.image} alt={item.name} className="food-image" />
             <h3>{item.name}</h3>
-            <p>${item.price}</p>
+            <p>Rs{item.price}</p>
             <button class="compare-btn" onClick={() => addToCart(item)}>Add to Cart</button>
           </div>
         ))}
